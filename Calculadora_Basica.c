@@ -1,3 +1,4 @@
+//This calculator was developed using Dev C++ software, therefore, it will only be compatible with the Windows operating system!
 #include <stdlib.h>
 #include <stdio.h>
 #include <locale.h>
@@ -8,13 +9,13 @@ void limparTela() {
 }
 float somar(){
 		float xsoma1, xsoma2, xresult;
-		printf("Operação número %d escolhida! \n",xoperacao);
+		printf("OperaÃ§Ã£o nÃºmero %d escolhida! \n",xoperacao);
 		printf("Digite o primeiro valor: ");
 		scanf("%f",&xsoma1);
 		printf("Digite o segundo valor: ");
 		scanf("%f",&xsoma2);
 		xresult = xsoma1 + xsoma2;
-		printf("A soma entre %.2f e %.2f é igual à: %.2f. \n",xsoma1, xsoma2, xresult);
+		printf("A soma entre %.2f e %.2f Ã© igual Ã : %.2f. \n",xsoma1, xsoma2, xresult);
 		system("PAUSE");
 		limparTela();
 		return main();
@@ -22,13 +23,13 @@ float somar(){
 
 float subtrair(){
 		float xsub1, xsub2, xresult;
-		printf("Operação número %d escolhida! \n",xoperacao);
+		printf("OperaÃ§Ã£o nÃºmero %d escolhida! \n",xoperacao);
 		printf("Digite o primeiro valor: ");
 		scanf("%f",&xsub1);
 		printf("Digite o segundo valor: ");
 		scanf("%f",&xsub2);
 		xresult = xsub1 - xsub2;
-		printf("A subtração entre %.2f e %.2f é igual à: %.2f. \n",xsub1, xsub2, xresult);
+		printf("A subtraÃ§Ã£o entre %.2f e %.2f Ã© igual Ã : %.2f. \n",xsub1, xsub2, xresult);
 		system("PAUSE");
 		limparTela();
 		return main();
@@ -36,7 +37,7 @@ float subtrair(){
 
 float dividir(){
 		float xdiv1, xdiv2, xresult;
-		printf("Operação número %d escolhida! \n",xoperacao);
+		printf("OperaÃ§Ã£o nÃºmero %d escolhida! \n",xoperacao);
 		printf("Digite o primeiro valor: ");
 		scanf("%f",&xdiv1);
 		printf("Digite o segundo valor: ");
@@ -46,7 +47,7 @@ float dividir(){
 			scanf("%f",&xdiv2);
 		}
 		xresult = xdiv1 / xdiv2;
-		printf("A divisão entre %.2f e %.2f é igual à: %.2f. \n",xdiv1, xdiv2, xresult);
+		printf("A divisÃ£o entre %.2f e %.2f Ã© igual Ã : %.2f. \n",xdiv1, xdiv2, xresult);
 		system("PAUSE");
 		limparTela();
 		return main();
@@ -54,13 +55,13 @@ float dividir(){
 
 float multiplicar(){
 		float xmult1, xmult2, xresult;
-		printf("Operação número %d escolhida! \n",xoperacao);
+		printf("OperaÃ§Ã£o nÃºmero %d escolhida! \n",xoperacao);
 		printf("Digite o primeiro valor: ");
 		scanf("%f",&xmult1);
 		printf("Digite o segundo valor: ");
 		scanf("%f",&xmult2);
 		xresult = xmult1 * xmult2;
-		printf("A multiplicação entre %.2f e %.2f é igual à: %.2f. \n",xmult1, xmult2, xresult);
+		printf("A multiplicaÃ§Ã£o entre %.2f e %.2f Ã© igual Ã : %.2f. \n",xmult1, xmult2, xresult);
 		system("PAUSE");
 		limparTela();
 		return main();
@@ -68,14 +69,14 @@ float multiplicar(){
 
 int main(){
 	setlocale(LC_ALL,"Portuguese");
-	printf("Calculadora de operações basicas (Soma, Subtração, Divisão e multiplicação). \n");
+	printf("Calculadora de operaÃ§Ãµes basicas (Soma, SubtraÃ§Ã£o, DivisÃ£o e multiplicaÃ§Ã£o). \n");
 	printf("***************************************************************************** \n");
-	printf("Tecle o número correspondente a operação que deseja realizar: \n");
+	printf("Tecle o nÃºmero correspondente a operaÃ§Ã£o que deseja realizar: \n");
 	printf("***************************************************************************** \n");
 	printf("Soma: 1 \n");
-	printf("Subtração: 2 \n");
-	printf("Divisão: 3 \n");
-	printf("Multiplicação: 4 \n");
+	printf("SubtraÃ§Ã£o: 2 \n");
+	printf("DivisÃ£o: 3 \n");
+	printf("MultiplicaÃ§Ã£o: 4 \n");
 	printf("Enccerrar o programa: 0 \n");
 	printf("***************************************************************************** \n");
 	scanf("%d",&xoperacao);
@@ -92,7 +93,7 @@ int main(){
 			printf("Programa encerrado. \n");
 			return 0;
 		} else{
-			printf("Erro: Valor invalido, digite um número correspondente as opções acima! \n");
+			printf("Erro: Valor invalido, digite um nÃºmero correspondente as opÃ§Ãµes acima! \n");
 			system("PAUSE");
 			getchar();
 			limparTela();
